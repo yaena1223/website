@@ -19,8 +19,9 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.showmain),
-    path('show',views.show),
+    path('',views.showmain,name="index"),
+    path('like',views.like, name = "like"),
+    path('experience',views.experience, name = "experience"),
    
 ]
 
